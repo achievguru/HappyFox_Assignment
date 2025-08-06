@@ -1,0 +1,41 @@
+{
+    "predicate": "ANY",
+    "rules": [
+        {
+            "field": "sender",
+            "predicate": "contains",
+            "value": "noreply@"
+        },
+        {
+            "field": "subject",
+            "predicate": "contains",
+            "value": "invoice"
+        },
+        {
+            "field": "sender",
+            "predicate": "contains",
+            "value": "billing@"
+        },
+        {
+            "field": "received_at",
+            "predicate": "less_than_days",
+            "value": "7"
+        },
+        {
+            "field": "subject",
+            "predicate": "contains",
+            "value": "urgent"
+        },
+        {
+            "field": "sender",
+            "predicate": "contains",
+            "value": "spam@"
+        },
+        {
+            "field": "body",
+            "predicate": "contains",
+            "value": "lottery"
+        }
+    ],
+    "actions": ["mark_read", "move:ProcessedEmails"]
+}
