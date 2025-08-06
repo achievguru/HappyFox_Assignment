@@ -66,7 +66,7 @@ game_rule_processor/
 - **`README.md`** - Project documentation and setup instructions
 
 ### Test Files:
-- **`test_integration.py`** - Integration tests for core functionality
+- **`integration_testing.py`** - Integration tests for core functionality
 - **`tests/test_rule_engine.py`** - Unit tests for rule engine
 
 ## 🎯 Benefits of Clean Structure
